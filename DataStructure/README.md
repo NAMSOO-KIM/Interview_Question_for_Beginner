@@ -182,6 +182,12 @@ _RBT 는 BST 의 삽입, 삭제 연산 과정에서 발생할 수 있는 문제�
 
 Java Collection 에서 ArrayList 도 내부적으로 RBT 로 이루어져 있고, HashMap 에서의 `Separate Chaining`에서도 사용된다. 그만큼 효율이 좋고 중요한 자료구조이다.
 
+
+
+참고: 1. https://hororolol.tistory.com/408
+
+​		  2. https://velog.io/@agugu95/%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%AC%EC%9D%98-%EA%B7%A0%ED%98%95-RED-BALCKAVL
+
 [뒤로](https://github.com/JaeYeopHan/for_beginner)/[위로](#part-1-2-datastructure)
 
 ---
