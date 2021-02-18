@@ -386,6 +386,10 @@ Graph 의 각 vertex 에 `set-id`라는 것을 추가적으로 부여한다. 그
 
 
 
+동작과정
+
+![img](https://media.vlpt.us/images/fldfls/post/4b407297-f4c6-4487-a62b-4d5f52fa64f3/image.png)
+
 참고 : https://kingpodo.tistory.com/50
 
 #### Time Complexity
