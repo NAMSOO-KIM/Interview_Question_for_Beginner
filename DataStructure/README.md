@@ -327,9 +327,17 @@ Directed Graph 에서는 간선에 방향성이 존재하기 때문에 Degree �
 
 해당하는 위치의 value 값을 통해서 vertex 간의 연결 관계를 O(1) 으로 파악할 수 있다. Edge 개수와는 무관하게 V^2 의 Space Complexity 를 갖는다. Dense graph 를 표현할 때 적절할 방법이다.
 
+cf )**밀집 그래프**(dense graph)는 간선(변)의 수가 최대 간선의 수에 가까운 [그래프](https://ko.wikipedia.org/wiki/그래프)이다.
+
 #### 인접 리스트 (adjacent list) : 연결 리스트를 사용하는 방법
 
 vertex 의 adjacent list 를 확인해봐야 하므로 vertex 간 연결되어있는지 확인하는데 오래 걸린다. Space Complexity 는 O(E + V)이다. Sparse graph 를 표현하는데 적당한 방법이다.
+
+cf) **희소 그래프**(sparse graph)는 간선이 얼마 없는 그래프이다.
+
+
+
+![11111](C:\Users\programming\Desktop\11111.JPG)
 
 </br>
 
@@ -380,7 +388,19 @@ Graph 의 각 vertex 에 `set-id`라는 것을 추가적으로 부여한다. 그
 
 => 전체 시간 복잡도 : O(E log V)
 
+
+
+## 크루스칼 VS 프림
+
+- 프림은 정점 위주의 알고리즘, 크루스칼은 간선 위주의 알고리즘
+- 프림은 시작점을 정하고, 시작점에서 가까운 정점을 선택하면서 트리르 구성 하므로 그 과정에서 사이클을 이루지 않지만 크루스칼은 시작점을 따로 정하지 않고 최소 비용의 간선을 차례로 대입 하면서 트리를 구성하기 때문에 사이클이 이루어지는 항상 확인 해야한다.
+- 프림의 경우 최소 거리의 정점을 찾는 부분에서 자료구조의 성능에 영향을 받는다.
+- 크루스칼은 간선을 기준으로 정렬하는 과정이 오래 걸린다.
+- 간선의 개수가 작은 경우에는 크루스칼, 간선의 개수가 많은 경우에는 프림.
+
 </br>
+
+
 
 [뒤로](https://github.com/JaeYeopHan/for_beginner)/[위로](#part-1-2-datastructure)
 
